@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/globalstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/converter.css" />
+    <title>Conversor</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Salomão F. Junior</h1>
+        <h3>Redes de Computadores II</h3>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-section">
+        <h1>Bases Numéricas</h1>
+        <p>
+          As bases numéricas são fundamentais em diversos campos da matemática e
+          da computação, pois elas são usadas para representar números de
+          diferentes formas. Cada base numérica tem um conjunto de símbolos e
+          uma forma única de interpretar e operar números. Aqui estão as
+          principais bases numéricas e suas importâncias:
+        </p>
+        <div class="numberBase">
+          <div class="baseBox">
+            <h3>Base Decimal (10)</h3>
+            <p><strong>Símbolos: </strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p>
+            <p>
+              <strong>Importância: </strong>É a base mais utilizada no cotidiano
+              por ser o sistema numérico que usamos para contar, calcular, e
+              realizar transações financeiras.
+            </p>
+          </div>
+          <div class="baseBox">
+            <h3>Base Binária (2)</h3>
+            <p><strong>Símbolos: </strong>0, 1</p>
+            <p>
+              <strong>Importância: </strong>Essencial para o funcionamento dos
+              computadores e sistemas digitais. Todos os dados em computadores,
+              desde números até textos, imagens e sons, são representados em
+              binário.
+            </p>
+          </div>
+          <div class="baseBox">
+            <h3>Base Octal (8)</h3>
+            <p><strong>Símbolos: </strong>0, 1, 2, 3, 4, 5, 6, 7</p>
+            <p>
+              <strong>Importância: </strong>Foi usada historicamente em alguns
+              sistemas de computadores por ser uma forma mais compacta de
+              representar números binários (cada dígito octal representa três
+              dígitos binários).
+            </p>
+          </div>
+          <div class="baseBox">
+            <h3>Base Hexadecimal (16)</h3>
+            <p>
+              <strong>Símbolos: </strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C,
+              D, E, F
+            </p>
+            <p>
+              <strong>Importância: </strong>Muito usada em programação e
+              engenharia de computadores. O sistema hexadecimal permite uma
+              representação mais compacta de números binários, onde cada dígito
+              hexadecimal equivale a quatro dígitos binários.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="converter-section">
+        <h1>Converta sua base</h1>
+
+        <h2>Conversão Decimal</h2>
+        <div class="decimalConversion">
+          <div>
+            <label for="decimalValue">Digite o valor decimal</label>
+            <input type="number" name="decimalValue" id="decimalValue" />
+          </div>
+          <span onclick="decimalConversions()">Converter</span>
+        </div>
+        <p>para Binário: <span id="decimalToBinary">-----</span></p>
+        <p>para Hexadecimal: <span id="decimalToHexadecimal">-----</span></p>
+        <p>para Octal: <span id="decimalToOctal">-----</span></p>
+
+        <h2>Conversão Binária</h2>
+        <div class="binaryConversion">
+          <div>
+            <label for="binaryValue">Digite o valor binário</label>
+            <input type="number" name="binaryValue" id="binaryValue" />
+          </div>
+          <span onclick="binaryConversions()">Converter</span>
+        </div>
+        <p>para Decimal: <span id="binaryToDecimal">-----</span></p>
+        <p>para Hexadecimal: <span id="binaryToHexadecimal">-----</span></p>
+        <p>para Octal: <span id="binaryToOctal">-----</span></p>
+
+        <h2>Conversão Hexadecimal</h2>
+        <div class="hexadecimalConversion">
+          <div>
+            <label for="hexadecimalValue">Digite o valor hexadecimal</label>
+            <input type="text" name="hexadecimalValue" id="hexadecimalValue" />
+          </div>
+          <span onclick="hexadecimalConversions()">Converter</span>
+        </div>
+        <p>para Decimal: <span id="hexadecimalToDecimal">-----</span></p>
+        <p>para Binário: <span id="hexadecimalToBinary">-----</span></p>
+        <p>para Octal: <span id="hexadecimalToOctal">-----</span></p>
+
+        <h2>Conversão Octal</h2>
+        <div class="octalConversion">
+          <div>
+            <label for="octalValue">Digite o valor octal</label>
+            <input type="text" name="octalValue" id="octalValue" />
+          </div>
+          <span onclick="octalConversions()">Converter</span>
+        </div>
+        <p>para Decimal: <span id="octalToDecimal">-----</span></p>
+        <p>para Binário: <span id="octalToBinary">-----</span></p>
+        <p>para Hexadecimal: <span id="octalToHexadecimal">-----</span></p>
+      </section>
+    </main>
+    <footer>
+      <p>Atividade de Redes de Computadores II</p>
+    </footer>
+
+    <script src="js/decimal.js"></script>
+    <script src="js/binary.js"></script>
+    <script src="js/hexadecimal.js"></script>
+    <script src="js/octal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+:root {
+  --white: #fff;
+  --dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  max-width: 768px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 2% 0;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--dark);
+  align-items: center;
+  padding: 1rem;
+  color: var(--white);
+}
+
+#navbar h1,
+h3 {
+  font-weight: lighter;
+}
+
+#navbar h3 {
+  text-align: right;
+}
+
+#navbar ul {
+  list-style: none;
+}
